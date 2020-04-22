@@ -8,6 +8,10 @@
 - Integrates with DSE Search/Graph
 - “Always on SQL” to connect with BI tools (JDBC/ODBC)
 
+
+## USE CASE 1 : Loading data from DSEFS To Spark and process it
+
+
 ## Directory link
 dsefs://10.101.32.140:5598/newdirectory/measurement_summary_1.csv
 
@@ -58,6 +62,9 @@ create table test_data.measurement_summary (
 # Run on Another Node 
 
 select * from measurement_summary limit 5;
+
+## USE CASE2 : LOAD DATA FROM DSE CASSANDRA TO DSE ANLAYTICS and process it. 
+I created dummy data almost 10M records using Cassandra Stress for this purpose. 
 
 # Load from C* to SPARK
 
